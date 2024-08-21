@@ -1,0 +1,29 @@
+.logo {
+    color: #F8CB46;
+    font-size: 30px;
+    font-weight: 700;
+    width: 150px;
+}
+
+.logo span {
+    color: rgb(49, 134, 22);
+}
+
+.navbar 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+
+.navbar .logo
+{
+    width: max(10%,80px);
+}
+
+.navbar .profile
+{
+    width: 40px;
+    cursor: pointer;
+}

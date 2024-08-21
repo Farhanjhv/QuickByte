@@ -1,0 +1,51 @@
+.licon {
+    height: 35px;
+    margin-left: -4px;
+}
+
+.sidebar {
+    width: 18%;
+    min-height: 100vh;
+    border: 1.5px solid #a9a9a9;
+    border-top: 0;
+    font-size: max(1vw, 10px);
+}
+
+.sidebar-options
+{
+    padding-top: 15px;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-option
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #a9a9a9;
+    border-right: 0;
+    padding: 8px 10px;
+    border-radius: 3px 0px 0px 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.sidebar-option:hover 
+{
+    background-color: #fdf7e4;
+}
+
+.sidebar-option.active
+{
+    background-color: #ffebb1;
+}
+
+@media (max-width:900px)
+{
+    .sidebar-option p{
+        display: none;
+    }
+}

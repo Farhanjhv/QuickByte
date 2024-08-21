@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Kalam:wght@300;400;700&display=swap');
+
+.header
+{
+    height: 34vw;
+    margin: 30px auto;
+    background: url("header3.jpg") no-repeat;
+    background-size: contain;
+    position: relative;
+    border-radius: 20px;
+}
+
+.header-contents
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 2.5vw;
+    animation: fadein 4s;
+}
+
+.header-contents p
+{
+    color: #3e3e3e;
+}
+
+.header-fd
+{
+    position: absolute;
+    display: flex;
+    left: 2.5vw;
+    top:30px;
+    animation: fadein 4s;
+    font-size: 27px;
+    max-width: 45%;
+    font-weight: 300;
+}
+
+.header button
+{
+    border: 1px solid rgb(49, 134, 22);
+    color: rgb(49, 134, 22);
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.header button:hover
+{
+    background-color:rgb(227, 238, 225);
+}
+
+@media (max-width:1050px)
+{
+    .header
+    {
+        height: 34vw;
+        border-radius: 20px;
+    }
+    .header-contents
+    {
+        max-width: 45%;
+    }
+    .header-contents h2
+    {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .header-fd
+    {
+        font-size: 17px;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width:750px)
+{
+    .header-contents
+    {
+        max-width: 40%;
+        font-size: 15px;
+    }
+    .header-contents h2
+    {
+        font-weight: 500;
+    }
+    .header-contents p
+    {
+        display: none;
+    }
+    .header-contents button
+    {
+        padding: 1vw 2vw;
+    }
+    .header-fd
+    {
+        font-size: 15px;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width:480px)
+{
+    .header-fd , .header-contents p
+    {
+        display: none;
+    }
+    .header-contents button
+    {
+        padding: 1vw 2vw;
+    }
+    .header-contents h2
+    {
+        font-weight: 500;
+        max-width: 100%;
+        font-size: 18px;
+    }
+}
