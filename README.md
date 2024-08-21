@@ -1,4 +1,0 @@
-# QuickByte
-# QuickByte
-# QuickByte
-# QuickByte
