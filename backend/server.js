@@ -13,7 +13,11 @@ const port = process.env.PORT || 4000
 
 // middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: process.env.FRONTEND_URL || "http://localhost:5174", // Set to your frontend's URL
+    credentials: true,
+}));
+
 
 // DB connection
 connectDB();
@@ -31,4 +35,5 @@ app.get("/",(req,res)=>{
 
 app.listen(port,()=>{
     console.log(`server started on http://localhost:${port}`)
+    console.log(`Running in ${process.env.NODE_ENV} mode`);
 })
